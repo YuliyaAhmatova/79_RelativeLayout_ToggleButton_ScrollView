@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textSize="36sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20pt"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20pt"
+        android:onClick="onToggleClick"
+        android:textOff="@string/download"
+        android:textOn="@string/roll_up"
+        android:textSize="36sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bookTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="48sp" />
+    </ScrollView>
+
+</LinearLayout>
